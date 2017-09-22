@@ -10,7 +10,9 @@ to inject CSS chunks paths into your HTML file with
 ## Recommended Installation
 
 ```bash
-npm install --save-dev css-chunks-html-webpack-plugin extract-css-chunks-webpack-plugin babel-plugin-dual-import html-webpack-plugin
+npm install --save-dev css-chunks-html-webpack-plugin \
+ extract-css-chunks-webpack-plugin babel-plugin-dual-import \
+ html-webpack-plugin
 ```
 
 *webpack.config.js*
