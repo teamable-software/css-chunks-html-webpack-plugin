@@ -1,0 +1,44 @@
+{
+  "name": "css-chunks-html-webpack-plugin",
+  "version": "0.0.1",
+  "description": "Injecting css chunks extracted using extract-css-chunks-webpack-plugin to HTML for html-webpack-plugin Edit",
+  "main": "lib/index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-dual-import": "^1.1.5",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-env": "^1.6.0",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.7.2",
+    "extract-css-chunks-webpack-plugin": "^2.0.17",
+    "html-webpack-plugin": "^2.30.1",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.6.0"
+  },
+  "peerDependencies": {
+    "webpack": "*"
+  },
+  "scripts": {
+    "fix": "eslint --ext js --fix lib,examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mike1808/css-chunks-html-webpack-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "html",
+    "html-webpack-plugin",
+    "css-chunks",
+    "code-splitting"
+  ],
+  "author": "mike1808",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mike1808/css-chunks-html-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/mike1808/css-chunks-html-webpack-plugin#readme"
+}
