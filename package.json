@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Injecting css chunks extracted using extract-css-chunks-webpack-plugin to HTML for html-webpack-plugin Edit",
   "main": "lib/index.js",
+  "author": "Michael Manukyan <michael@teamable.com> (https://github.com/mike1808)",
   "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -25,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mike1808/css-chunks-html-webpack-plugin.git"
+    "url": "git+https://github.com/teamable-software/css-chunks-html-webpack-plugin.git"
   },
   "keywords": [
     "webpack",
@@ -35,10 +36,9 @@
     "css-chunks",
     "code-splitting"
   ],
-  "author": "mike1808",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mike1808/css-chunks-html-webpack-plugin/issues"
+    "url": "https://github.com/teamable-software/css-chunks-html-webpack-plugin/issues"
   },
-  "homepage": "https://github.com/mike1808/css-chunks-html-webpack-plugin#readme"
+  "homepage": "https://github.com/teamable-software/css-chunks-html-webpack-plugin#readme"
 }
