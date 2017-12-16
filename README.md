@@ -26,7 +26,7 @@ npm install --save-dev css-chunks-html-webpack-plugin \
     // your other options
     plugins: [
       new ExtractCssChunks(),
-      new CssChunkHashPlugin({ inject: true }),
+      new CssChunkHashPlugin({ inject: 'head' }),
       new HtmlWebpackPlugin(),
     ]
   };
@@ -37,9 +37,11 @@ npm install --save-dev css-chunks-html-webpack-plugin \
 
 You can pass an object of configuration options to CssChunkHashPlugin. Allowed values are as follows:
 
-* `inject`: `true` | `false` whether to inject chunks paths object into HTML, used for manually adding chunks paths using custom teamplte for HtmlWebpackPlugin (default `true`)
+* `inject`: `'head'` | `'body'` | `false` whether to inject chunks paths script into HTML, used for manually adding
+chunks paths using custom template for HtmlWebpackPlugin (default `true`)
 
-The CSS chunks paths map is saved in `htmlWebpackPlugin.files.cssHash` in your template. So if you want to manually add CSS chunks map you can do (if you are using EJS):
+The CSS chunks paths map is saved in `htmlWebpackPlugin.files.cssHash` in your template. So if you want to manually add
+CSS chunks map you can do (if you are using EJS):
 
 ```ejs
 <script type="text/javascript">
@@ -47,7 +49,8 @@ The CSS chunks paths map is saved in `htmlWebpackPlugin.files.cssHash` in your t
 </script>
 ```
 
-Otherwise, if you set `inject: true` the script tag with `window.__CSS_CHUNKS__` will be injected in `head` or `body` according your HtmlWebpackPlugin configuration.
+By default, it will inject script tag into `<head>`. If you want to inject the script tag with `window.__CSS_CHUNKS__`
+ into `<body>` set `inject: 'body'`,
 
 ## Example
 

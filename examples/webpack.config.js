@@ -15,7 +15,7 @@ module.exports = {
     publicPath: '',
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.css$/,
         use: ExtractCssChunks.extract({
@@ -43,7 +43,7 @@ module.exports = {
   },
   plugins: [
     new ExtractCssChunks(),
-    new CssChunkHashPlugin({ inject: true }),
+    new CssChunkHashPlugin(),
     new HtmlWebpackPlugin(),
   ]
 };
