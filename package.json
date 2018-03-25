@@ -13,16 +13,18 @@
     "babel-preset-env": "^1.6.1",
     "css-loader": "^0.28.7",
     "eslint": "^4.13.1",
-    "extract-css-chunks-webpack-plugin": "^2.0.18",
-    "html-webpack-plugin": "^2.30.1",
+    "html-webpack-plugin": "3.1.0",
+    "mini-css-extract-plugin": "^0.2.0",
     "style-loader": "^0.19.1",
-    "webpack": "^3.10.0"
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.13"
   },
   "peerDependencies": {
     "webpack": "*"
   },
   "scripts": {
-    "fix": "eslint --ext js --fix lib,examples"
+    "fix": "eslint --ext js --fix lib,examples",
+    "test": "webpack --config ./examples/webpack.config.js"
   },
   "repository": {
     "type": "git",
