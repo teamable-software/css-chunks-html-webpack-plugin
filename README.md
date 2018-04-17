@@ -19,14 +19,14 @@ npm install --save-dev css-chunks-html-webpack-plugin \
 ```js
   const ExtractCssChunks = require('extract-css-chunks-webpack-plugin');
   const HtmlWebpackPlugin = require('html-webpack-plugin');
-  const CssChunkHashPlugin = require('../lib');
+  const CssChunksHtmlPlugin = require('css-chunks-html-webpack-plugin');
 
 
   module.exports = {
     // your other options
     plugins: [
       new ExtractCssChunks(),
-      new CssChunkHashPlugin({ inject: 'head' }),
+      new CssChunksHtmlPlugin({ inject: 'head' }),
       new HtmlWebpackPlugin(),
     ]
   };
@@ -54,7 +54,7 @@ By default, it will inject script tag into `<head>`. If you want to inject the s
 
 ## Example
 
-There is a basic example of usage in [examples][examples]
+There is a basic example of usage in [examples](examples)
 
 # Contribution
 
