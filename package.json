@@ -1,6 +1,6 @@
 {
   "name": "css-chunks-html-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description":
     "Injecting css chunks extracted using extract-css-chunks-webpack-plugin to HTML for html-webpack-plugin Edit",
   "main": "lib/index.js",
