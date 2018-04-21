@@ -7,6 +7,15 @@ Use in conjunction with
 to inject CSS chunks paths into your HTML file with
 [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin).
 
+## Version
+
+The current version is incompatible with Webpack 3 or older. In order to use this plugin with Webpack 3, use
+`css-chunks-html-webpack-plugin@0.1.0`
+
+```bash
+npm install --save-dev css-chunks-html-webpack-plugin@0.1.0
+```
+
 ## Recommended Installation
 
 ```bash
