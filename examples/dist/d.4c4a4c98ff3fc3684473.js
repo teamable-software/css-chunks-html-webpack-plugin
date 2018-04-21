@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{6:function(e,n,t){e.exports={d:"d__d--2-Mju"}},7:function(e,n,t){"use strict";t.r(n);var c=t(6),s=t.n(c),d=document.createElement("a");d.className=s.a.d,d.innerText="Hi!",d.href="https://github.com/mike1808/css-chunks-html-webpack-plugin",document.body.appendChild(d)}}]);
