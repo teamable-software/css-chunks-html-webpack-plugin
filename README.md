@@ -1,4 +1,5 @@
 # css-chunks-html-webpack-plugin
+
 Plugin for injecting css chunks, extracted using extract-css-chunks-webpack-plugin, to HTML for html-webpack-plugin
 
 Use in conjunction with
@@ -20,26 +21,21 @@ npm install --save-dev css-chunks-html-webpack-plugin@0.1.0
 
 ```bash
 npm install --save-dev css-chunks-html-webpack-plugin \
- extract-css-chunks-webpack-plugin babel-plugin-dual-import \
+ mini-css-extract-plugin babel-plugin-dual-import \
  html-webpack-plugin
 ```
 
-*webpack.config.js*
+_webpack.config.js_
+
 ```js
-  const ExtractCssChunks = require('extract-css-chunks-webpack-plugin');
-  const HtmlWebpackPlugin = require('html-webpack-plugin');
-  const CssChunksHtmlPlugin = require('css-chunks-html-webpack-plugin');
+const ExtractCssPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CssChunksHtmlPlugin = require('css-chunks-html-webpack-plugin');
 
-
-  module.exports = {
-    // your other options
-    plugins: [
-      new ExtractCssChunks(),
-      new CssChunksHtmlPlugin({ inject: 'head' }),
-      new HtmlWebpackPlugin(),
-    ]
-  };
-
+module.exports = {
+  // your other options
+  plugins: [new ExtractCssPlugin(), new CssChunksHtmlPlugin({ inject: 'head' }), new HtmlWebpackPlugin()],
+};
 ```
 
 ## Configuration
@@ -47,7 +43,7 @@ npm install --save-dev css-chunks-html-webpack-plugin \
 You can pass an object of configuration options to CssChunkHashPlugin. Allowed values are as follows:
 
 * `inject`: `'head'` | `'body'` | `false` whether to inject chunks paths script into HTML, used for manually adding
-chunks paths using custom template for HtmlWebpackPlugin (default `true`)
+  chunks paths using custom template for HtmlWebpackPlugin (default `true`)
 
 The CSS chunks paths map is saved in `htmlWebpackPlugin.files.cssHash` in your template. So if you want to manually add
 CSS chunks map you can do (if you are using EJS):
@@ -59,7 +55,7 @@ CSS chunks map you can do (if you are using EJS):
 ```
 
 By default, it will inject script tag into `<head>`. If you want to inject the script tag with `window.__CSS_CHUNKS__`
- into `<body>` set `inject: 'body'`,
+into `<body>` set `inject: 'body'`,
 
 ## Example
 

@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CssChunkHashPlugin merges defaults with options 1`] = `
+Object {
+  "foo": 42,
+  "inject": "head",
+}
+`;
+
+exports[`CssChunkHashPlugin users default without options 1`] = `
+Object {
+  "inject": "head",
+}
+`;
+
+exports[`CssChunkHashPlugin uses declared options over defaults 1`] = `
+Object {
+  "inject": "body",
+}
+`;
